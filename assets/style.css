@@ -222,6 +222,7 @@ form {
 	align-items: flex-start;
 }
 
+/* replace input by button */
 form input {
 	width: 100%;
 	background-color: transparent;
