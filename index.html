@@ -3,14 +3,58 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- twitter met added -->
+	<meta name="twitter:title" content="Nina Carducci">
+	<!-- description added with 154 characters -->
+	<meta name="twitter:description" content="Site web de la photographe Nina Carducci, proposant ses services et mettant en avant ses talents en exposants quelques clichés pour différents évènements.">
+	<meta name="twitter:image" content="http://127.0.0.1:5500/nina-carducci.github.io-master/assets/images/nina.webp">
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-		rel="stylesheet">
-	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet"> 
+	<!-- rich snippets -->
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "LocalBusiness",
+		  "name": "Nina Carducci",
+		  "image":"http://127.0.0.1:5500/nina-carducci.github.io-master/assets/images/nina.webp",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200"
+		  },
+		  "telephone": "05 56 67 78 89",
+		  "openingHours": "Mo-Fr 10:00-19:00",
+		  // Different prices added
+		  "priceRange": "$$$",
+		  "price": [
+			{
+			  "@type": "UnitPriceSpecification",
+			  "name": "Demi journée de shooting",
+			  "price": "350",
+			  "priceCurrency": "EUR"
+			},
+			{
+			  "@type": "UnitPriceSpecification",
+			  "name": "Photo",
+			  "price": "50",
+			  "priceCurrency": "EUR",
+			  "priceType": "PerPhotograph"
+			},
+			{
+			  "@type": "UnitPriceSpecification",
+			  "name": "Album A4 30 pages recto/verso",
+			  "price": "400",
+			  "priceCurrency": "EUR"
+			}
+		  ]
+		}
+	  </script>
+
 	<title>Nina Carducci</title> <!-- Add title tag -->
 </head>
 
@@ -91,6 +135,7 @@
 				<img data-gallery-tag="Concert" class="gallery-item"
 					src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Concert" loading="lazy"/>
 					<!-- loading="lazy" use to load pictures when necessary -->
+					<!-- shorten file names to make them easier to display -->
 				<img data-gallery-tag="Entreprises" class="gallery-item"
 					src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
 					alt="Entreprises" loading="lazy"/>
@@ -190,12 +235,11 @@
 					<p>68 avenue Alsace-Lorraine, 33200 Bordeaux</p>
 					<p>Téléphone : 05 56 67 78 89</p>
 				</address>
-				<p>Disponible du lundi au vendredi</p>
-				<p>Heures de disponibilité : 10h00 à 19h00</p>
+				<p>Disponible du lundi au vendredi de 10h00 à 19h00</p>
 			</div>
 			<div class="picture right">
 				<!-- Alt attribute added -->
-				<img src="./assets/images/camera.webp" alt="appareil photo"> <!-- need to change format in jpg -->
+				<img src="./assets/images/camera.webp" alt="représentation d'un appareil photo"> <!-- need to change format in jpg -->
 			</div>
 		</div>
 	</div>
@@ -204,7 +248,7 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<script src="./assets/scripts.js"></script>>
 </body>
 
 </html>
